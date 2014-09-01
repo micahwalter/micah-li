@@ -13,7 +13,7 @@
 			);
 		}
 
-		$min_length = 4;
+		$min_length = 1;
 		$max_length = 16;
 
 		for ($i = $min_length; $i <= $max_length; $i += 1){
