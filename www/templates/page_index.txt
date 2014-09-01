@@ -3,7 +3,7 @@
 <div class="col-md-8 col-md-offset-2">
   <div class="jumbotron">
     <h1>micah.li</h1>
-    <p>OK, looks like you got it installed. You win one (1) Internets.</p>
+    <a href="/create" class="btn btn-primary">Make one</a>
   </div>
 </div>
 
