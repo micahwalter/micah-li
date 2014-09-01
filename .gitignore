@@ -1,0 +1,9 @@
+*~
+www/include/config.php
+.vagrant
+tests/coverage.state
+coverage/
+www/composer.phar
+www/composer.lock
+www/vendor
+.DS_Store
