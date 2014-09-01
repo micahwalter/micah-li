@@ -1,8 +1,11 @@
 DROP TABLE IF EXISTS ShlongUrls;
 
 CREATE TABLE ShlongUrls (
-    `short_url`   VARCHAR(255) NOT NULL PRIMARY KEY,
+    `id` bigint(64) unsigned NOT NULL AUTO_INCREMENT,
+    `short_url`   VARCHAR(255) NOT NULL,
     `long_url`    TEXT,
     `shortened`   TIMESTAMP,
-    INDEX `long_urls` (long_url(255))
+    INDEX `long_urls` (long_url(255)),
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `short` (`short_url`)
 ) ENGINE=InnoDB, CHARACTER SET utf8;
