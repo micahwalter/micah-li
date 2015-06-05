@@ -54,5 +54,6 @@ RewriteRule ^about/?$			about.php 		[L,QSA]
 # Shlong
 
 RewriteRule ^create/?$			create.php 		[L,QSA]
+RewriteRule ^rest/?$			create_rest.php  	[L,QSA]
 
 RewriteRule ^([a-zA-Z0-9]+)/?$ 		shlong.php?short_url=$1&%{QUERY_STRING} [L]
