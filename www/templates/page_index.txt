@@ -5,6 +5,44 @@
     <h1>micah.li</h1>
     <a href="/create" class="btn btn-primary">Make one</a>
   </div>
+
+  <div>
+	<strong>What is this?</strong>
+	<p>You seem to have stumbled upon my little url shortener. That's all it is, a simple tool to make urls shorter than they need to be. I mostly made it for myself. Feel free to use it, but I cannot guarantee it will be here forever. It is the internet, you know...</p>
+
+	<strong>Who made this?</strong>
+	<p><a href="https://micahwalter.com">I did</a></p>
+
+	<strong>What does it do?</strong>
+	<p>It makes long urls short</p>
+
+	<strong>Why not just use something like <a href="http://bitly.com">bit.ly</a>?</strong>
+	<p>You probably should use something like bitly. But, I wanted to make my own thing, for learning and such, and so I did</p>
+
+	<strong>Can I use it myself?</strong>
+	<p>Sure. but as I mentioned, I make no guarantee that it will be here forever. Your short urls may die. Tred lightly... etc...</p>
+
+	<strong>Does it have an API?</strong>
+	<p>Of course it does, what kind of url shortener doesn't? <br />
+	The API has but one method. To use it, make a POST request like the following:</p>
+
+	<pre>$ curl -X POST -F "method=micahli.create" \
+	-F "url=http://somelongurl.com" \
+	http://micah.li/rest
+	</pre>
+
+	<p>If all goes well you should receive some sort of response like this:</p>
+
+	<pre>
+{literal}{
+    "long_url": "http://somelongurl.com",
+    "short_url": "http://micah.li/l",
+    "stat": "ok"
+}{/literal}
+</pre>
+	<strong>How did you make this?</strong>
+	<p>This mainly code borrowed from <a href="https://github.com/migurski/shlong">Shlong</a> and <a href="https://github.com/exflickr/flamework">Flamework</a>. You can fork it <a href="https://github.com/micahwalter/micah-li">here</a>.</p>
+  </div>
 </div>
 
 {include file='inc_foot.txt'}
